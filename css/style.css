@@ -1,0 +1,165 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #313131;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow:6px 6px 18px rgba(0,0,0,.35);
+}
+
+/* Navegación */
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+nav a:not(:last-child) {
+    margin-right: 25px;
+}
+
+
+a:hover {
+    color: #5EE0C2;
+}
+
+/* Secciones */
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+}
+
+.b-color{
+    background-color: #6d53ca;
+}
+
+  
+/*seccion 1*/
+.border-p{
+    border-width: 4px; 
+    border-style: dashed;
+     border-color: rgb(255, 255, 255);
+     
+}
+.border-p2{
+    border-width: 4px; 
+    border-style: dashed;
+     border-color: black;
+     
+}
+
+
+img{
+    width: 40%;
+    
+    
+}
+.jello-vertical{
+    animation:jello-vertical .9s  both;
+    animation-duration: 5s;
+}
+.m-6{
+    margin-top: 13%;
+    
+}
+.m-66{
+    margin-top: 33%;
+   
+}
+@media (max-width: 800px) {
+    .m-6{
+        margin-top: 15%;
+    }
+    }
+
+
+ @keyframes jello-vertical{
+     0%{transform:scale3d(1,1,1)}
+     30%{transform:scale3d(.75,1.25,1)}
+     40%{transform:scale3d(1.25,.75,1)}
+     50%{transform:scale3d(.85,1.15,1)}
+     65%{transform:scale3d(1.05,.95,1)}
+     75%{transform:scale3d(.95,1.05,1)}
+     100%{transform:scale3d(1,1,1)}}
+
+.tracking-in-contract{
+    animation:tracking-in-contract .8s cubic-bezier(.215,.61,.355,1.000) both
+}
+
+
+ @keyframes tracking-in-contract{
+     0%{letter-spacing:1em;opacity:0}
+     40%{opacity:.6}
+     100%{letter-spacing:normal;opacity:1}
+    }
+
+    .color-change-3x{
+        animation:color-change-3x 4s linear infinite alternate both
+    }
+    
+
+@keyframes color-change-3x{
+    0%{background:#3ee2e2}
+    50%{background:#ffc72c}
+    100%{background:#e99739}}
+
+    .color-change-3x2 {
+        -webkit-animation: color-change-3x 4s linear infinite alternate both;
+                animation: color-change-3x 4s linear infinite alternate both;
+    }
+
+  
+
+  /*Btn whast logo*/
+  .whatsapp {
+    position:fixed;
+    width:50px;
+    height:50px;
+    bottom:40px;
+    right:20px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:33px;
+    z-index:100;
+  
+  }
+  .whatsapp:hover {
+    color:white;
+  }
+  .whatsapp-icon {
+    margin:auto;
+  }
